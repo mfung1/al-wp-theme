@@ -9,9 +9,9 @@
  * @since Annette Lankest 2018 0.0.1
  */
 
- get_header();
 ?>
-
-<h1>Test</h1>
-
-<?php get_footer();?>
+      </div>
+    </main>
+    <?php wp_footer(); ?>
+  </body>
+</html>
