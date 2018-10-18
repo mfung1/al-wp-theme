@@ -2,9 +2,10 @@
 
 // 01-Settings
 
-@import './01-Settings/config.scss',
-        './01-Settings/colours.css',
-        './01-Settings/breakpoints.css';
+@import './01-Settings/colours.scss',
+        './01-Settings/breakpoints.scss';
 
+// 02-Settings
 
+@import './02-Tools/breakpoints'
 

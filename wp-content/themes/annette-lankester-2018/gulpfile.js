@@ -18,29 +18,26 @@ const config = {
 }
 
 gulp.task('default', () => {
-  gulp.watch('./build/scss/**/*.scss', ['sass']);
-  gulp.watch('./build/JS/**/*.js', ['scripts']);
-  gulp.watch('./**/**/*.php').on('change', BrowserSync.reload);
+  gulp.watch('./scss/**/*.scss', ['scss']);
+  gulp.watch('./js/**/*.js', ['scripts']);
 })
 
 gulp.task('scss', () => {
   gulp.src(config.paths.scss)
-    .pipe(sass().on('error' , console.error(error)))
+    .pipe(scss().on('error' , scss.logError))
     .pipe(concat('styles.min.css'))
-    .pipe(postcss[autoprefix()])
+    .pipe(postcss([autoprefix()]))
     .pipe(cleancss())
-    .pipe(gulp.dest('/dist/css'))
-    .pipe(BrowserSync.stream());
+    .pipe(gulp.dest('./dist/css'))
 })
 
-gulp.task('js', () => {
+gulp.task('scripts', () => {
   gulp.src(config.paths.js)
     .pipe(babel({
       presets: ['env']
     }))
-    .on('error', console.error(error))
+    .on('error', console.error(error).bind(console))
     .pipe(concat('scripts.min.js'))
     .pipe(uglifyjs())
-    .pipe(gulp.dest('/dist/js'))
-    .pipe(BrowserSync.stream())
+    .pipe(gulp.dest('./dist/js'))
 })

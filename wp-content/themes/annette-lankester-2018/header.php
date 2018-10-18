@@ -12,19 +12,16 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php endif; ?>
+	<link rel="stylesheet" href="./dist/css/styles.min.css">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <main id="page" class="site">
 	  <div class="site-inner">
-		  <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
+		  <a class="skip-link screen-reader-text" href="#content">Skip to main content</a>
 
 		  <header></header>
 
