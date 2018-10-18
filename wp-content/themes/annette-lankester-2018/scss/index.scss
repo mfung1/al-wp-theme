@@ -1,11 +1,22 @@
+/*!
+Theme Name: Annette-Lankester-2018
+Author: Matthew Fung
+Description: A website theme for Annette Lankester.
+Version: 0.0.1
+Tags: Sass, HTML, ES6
+*/
 // Includes File: Only includes and overall config switches
 
 // 01-Settings
 
-@import './01-Settings/colours.scss',
-        './01-Settings/breakpoints.scss';
+@import './01-Settings/_colours.scss',
+        './01-Settings/_breakpoints.scss';
 
 // 02-Settings
 
-@import './02-Tools/breakpoints'
+@import './02-Tools/_breakpoint.scss';
+
+// 03-Generic
+
+@import './03-Generic/_fonts.scss';
 
