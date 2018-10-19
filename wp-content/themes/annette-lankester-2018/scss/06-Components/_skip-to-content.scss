@@ -1,0 +1,14 @@
+.skip-lnk {
+  background-color: $white;
+  padding: px-to-rem(8px);
+  max-height: px-to-rem(40px);
+  position: fixed;
+  line-height: px-to-rem(20px);
+  left: 0;
+  top: -40px;
+  transition: top .6s;
+  &:focus {
+    top: 0;
+    transition: top .6s;
+  }
+}

@@ -34,9 +34,9 @@ gulp.task('scss', () => {
 gulp.task('scripts', () => {
   gulp.src(config.paths.js)
     .pipe(babel({
-      presets: ['env']
+      presets: ['@babel/preset-env']
     }))
-    .on('error', console.error(error).bind(console))
+    .on('error', error => console.error(error))
     .pipe(concat('scripts.min.js'))
     .pipe(uglifyjs())
     .pipe(gulp.dest('./dist/js'))

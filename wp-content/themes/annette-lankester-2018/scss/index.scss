@@ -9,14 +9,37 @@ Tags: Sass, HTML, ES6
 
 // 01-Settings
 
-@import './01-Settings/_colours.scss',
-        './01-Settings/_breakpoints.scss';
+@import './01-Settings/globals',
+        './01-Settings/colours',
+        './01-Settings/breakpoints';
 
 // 02-Settings
 
-@import './02-Tools/_breakpoint.scss';
+@import './02-Tools/breakpoint',
+        './02-Tools/px-to-rem';
 
 // 03-Generic
 
-@import './03-Generic/_fonts.scss';
+@import './03-Generic/fonts',
+        './03-Generic/reset';
 
+
+// 04-Elements
+
+@import './04-Elements/headings',
+        './04-Elements/links';
+
+// 05-Objects
+
+@import './05-Objects/page-wrpper';
+
+// 06-Components
+
+@import './06-Components/nav',
+        './06-Components/paras',
+        './06-Components/skip-to-content',
+        './06-Components/logo';
+
+// 07-Utils
+
+@import './07-Utils/rotate';

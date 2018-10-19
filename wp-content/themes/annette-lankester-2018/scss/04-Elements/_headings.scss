@@ -1,0 +1,18 @@
+h1 {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(31px);
+  @include breakpoint(tablet) {
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(41px);
+  }
+}
+
+h2 {
+  font-size: px-to-rem(28px);
+  line-height: px-to-rem(36px);
+}
+
+h3 {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(36px);
+}

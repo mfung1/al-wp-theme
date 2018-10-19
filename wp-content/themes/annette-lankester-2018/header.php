@@ -14,18 +14,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="<?php echo htmlspecialchars($styles);?>">
 	<link href="https://fonts.googleapis.com/css?family=Lora:700|Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo htmlspecialchars($styles);?>">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <main id="page" class="site">
-	  <div class="site-inner">
-		  <a class="skip-link screen-reader-text" href="#content">Skip to main content</a>
+	  <div class="al-wrpper">
+		  <a class="skip-lnk screen-reader-text" href="#content">Skip to main content</a>
 
-		  <header class="nav">
-			
-			</header>
+		  <nav class="nav">
+				<h1 class="al-logo">Annette Lankester</h1>
+			<?php
+				wp_nav_menu( array(
+					'menu' => 'Navigation',
+					'menu_class' => 'nav_cnt',
+					'container' => false,
+					) );
+			?>
+			  <button class="nav_burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			  <div class="nav_mob">
+				 <?php
+				wp_nav_menu( array(
+					'menu' => 'Navigation',
+					'menu_class' => 'nav_mob_cnt',
+					'container' => false,
+					'link_before' => '<span class="nav_txt">',
+					'link_after' => '</span>',
+					) );
+			?>
+				</div>
+		  </nav>
 
 		  <div id="content" class="site-content">
