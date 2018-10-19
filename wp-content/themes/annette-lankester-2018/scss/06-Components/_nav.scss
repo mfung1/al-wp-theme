@@ -32,15 +32,13 @@
     &:last-child {
       margin-right: 0;
     }
-    &:hover a:after {
+    &:hover span {
       border-bottom: 2px solid $white;
       transition: border-bottom-color .6s ease;
     }
     span {
       @include ssp-bld;
       border-bottom: 2px solid transparent;
-    }
-    a {
       transition: border-bottom-color .6s ease;
       position: relative;
       color: $white;

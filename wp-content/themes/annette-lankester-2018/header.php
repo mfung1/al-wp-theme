@@ -31,6 +31,8 @@
 					'menu' => 'Navigation',
 					'menu_class' => 'nav_cnt',
 					'container' => false,
+					'link_before' => '<span class="nav_txt">',
+					'link_after' => '</span>',
 					) );
 			?>
 			  <button class="nav_burger">
