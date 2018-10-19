@@ -24,32 +24,34 @@
 	  <div class="al-wrpper">
 		  <a class="skip-lnk screen-reader-text" href="#content">Skip to main content</a>
 
-		  <nav class="nav">
-				<h1 class="al-logo">Annette Lankester</h1>
-			<?php
-				wp_nav_menu( array(
-					'menu' => 'Navigation',
-					'menu_class' => 'nav_cnt',
-					'container' => false,
-					'link_before' => '<span class="nav_txt">',
-					'link_after' => '</span>',
-					) );
-			?>
-			  <button class="nav_burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			  <div class="nav_mob">
-				 <?php
-				wp_nav_menu( array(
-					'menu' => 'Navigation',
-					'menu_class' => 'nav_mob_cnt',
-					'container' => false,
-					'link_before' => '<span class="nav_txt">',
-					'link_after' => '</span>',
-					) );
-			?>
+		  <nav class="bg-purp">
+				<div class="nav mw-1200">
+					<h1 class="al-logo">Annette Lankester</h1>
+					<?php
+						wp_nav_menu( array(
+							'menu' => 'Navigation',
+							'menu_class' => 'nav_cnt ta-r',
+							'container' => false,
+							'link_before' => '<span class="nav_txt">',
+							'link_after' => '</span>',
+							) );
+					?>
+					<button class="nav_burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="nav_mob">
+					<?php
+					wp_nav_menu( array(
+						'menu' => 'Navigation',
+						'menu_class' => 'nav_mob_cnt',
+						'container' => false,
+						'link_before' => '<span class="nav_txt">',
+						'link_after' => '</span>',
+						) );
+				?>
+					</div>
 				</div>
 		  </nav>
 

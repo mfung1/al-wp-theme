@@ -27,7 +27,8 @@ Tags: Sass, HTML, ES6
 // 04-Elements
 
 @import './04-Elements/headings',
-        './04-Elements/links';
+        './04-Elements/links',
+        './04-Elements/bg';
 
 // 05-Objects
 
@@ -38,8 +39,11 @@ Tags: Sass, HTML, ES6
 @import './06-Components/nav',
         './06-Components/paras',
         './06-Components/skip-to-content',
-        './06-Components/logo';
+        './06-Components/logo',
+        './06-Components/footer';
 
 // 07-Utils
 
-@import './07-Utils/rotate';
+@import './07-Utils/rotate',
+        './07-Utils/col',
+        './07-Utils/alignment';

@@ -16,3 +16,7 @@ h3 {
   font-size: px-to-rem(24px);
   line-height: px-to-rem(36px);
 }
+
+h1,h2,h3 {
+  color: $black;
+}

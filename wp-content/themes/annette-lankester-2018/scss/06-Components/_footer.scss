@@ -1,0 +1,30 @@
+.#{$namespace}-ftr {
+  min-height: 16.4rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+  &-cnt {
+    
+    padding: 2.2rem 1.5rem 1.5rem 2.6rem;
+    display: grid;
+    grid-template-columns: 2fr 1.25fr 1fr 1fr 1fr;
+    grid-gap: px-to-rem(48px);
+    grid-template-areas: 'logo . col1 col2 col3';
+  }
+  h3,h2 {
+    margin-bottom: .6rem;
+  }
+  li {
+    margin-bottom: .8rem;
+  }
+  li:last-child {margin-bottom: 0;}
+  p {
+    color: $white;
+  }
+  .logo1 {grid-area: col1}
+  .logo2 {grid-area: col2}
+  .logo3 {grid-area: col3}
+
+}

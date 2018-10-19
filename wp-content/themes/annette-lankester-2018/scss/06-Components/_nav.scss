@@ -2,7 +2,6 @@
   min-height: 6.3rem;
   width: 100%;
   max-width: 100%;
-  background-color: $purple;
   display: flex;
   padding: 1.2rem 1.5rem;
   @include breakpoint(desktop) {
@@ -14,7 +13,6 @@
   &_cnt {
     flex: 1 1 50%;
     list-style-type: none;
-    text-align: right;
     display: none;
     @include breakpoint(desktop) {
       display: inline-block;
