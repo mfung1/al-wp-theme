@@ -22,7 +22,7 @@
     background-color: $purple;
     &:hover,
     &:focus { 
-      box-shadow: 0 0 0 4px rgba($purple, .6);
+      box-shadow: 0 0 0 4px rgba($purple, .4);
     }
   }
 
@@ -34,7 +34,7 @@
     background-color: $med-purple;
     &:hover,
     &:focus { 
-      box-shadow: 0 0 0 4px rgba($med-purple, .4);
+      box-shadow: 0 0 0 4px rgba($med-purple, .6);
     }
   }
 

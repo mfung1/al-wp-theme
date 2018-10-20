@@ -3,7 +3,7 @@ $imgpath = get_stylesheet_directory_uri() . '/img/gift.svg#gift';
 ?>
 <article class="al-hero al-hero-rvrs">
   <div class="al-hero-svg">
-    <svg preserveAspectRatio="xMidyMid meet" viewbox="0 0 369 345">
+    <svg preserveAspectRatio="xMidYMid meet" viewbox="0 0 369 345">
       <use xlink:href="<?php echo $imgpath?>"/>
     </svg>
   </div>
