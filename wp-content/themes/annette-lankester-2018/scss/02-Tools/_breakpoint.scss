@@ -9,6 +9,6 @@
   } @else if $point == 'mobile' {
     @media (min-width: #{$small}px)  { @content ; }
   } @else {
-    @media (min-width: #{$point}px) { @content ; }
+    @media (min-width: #{$point}) { @content ; }
   }
 }

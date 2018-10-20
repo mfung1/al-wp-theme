@@ -41,7 +41,6 @@
               <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">annette.lankester@gmail.com</span></a></li>
             </ul>
           </div>
-        </div>
       </footer>
     </main>
     <script src="<?php echo htmlspecialchars($scripts)?>"></script>

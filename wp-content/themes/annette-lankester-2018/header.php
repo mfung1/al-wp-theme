@@ -32,7 +32,6 @@
 				</symbol>
       </defs>
     </svg>
-	  <div class="al-wrpper">
 		  <a class="skip-lnk screen-reader-text" href="#content">Skip to main content</a>
 
 		  <nav class="bg-purp">
@@ -66,4 +65,4 @@
 				</div>
 		  </nav>
 
-		  <div id="content" class="site-content">
+		  <div id="content" class="al-wrpper mw-1200">

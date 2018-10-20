@@ -36,3 +36,8 @@ const toggleButton = () => {
 }
 
 burger.addEventListener('click', toggleButton);
+burger.addEventListener('keypress', e => {
+  if(e.keyCode == 32 || e.keyCode == 32 || e.charCode == 32 || e.charCode == 13) {
+    toggleButton;
+  }
+})

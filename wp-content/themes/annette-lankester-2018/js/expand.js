@@ -24,9 +24,10 @@ const expand = () => {
   for (let i = 0; i < handlers.length; i++){
     handlers[i].addEventListener('click', function(){addClass(targets[i], collapsers[i], 'rotate')}, false);
     handlers[i].addEventListener('keypress', function (e) {
-      if(e.key == 'Spacebar' || e.key == 'Return'){
+      if(e.keyCode == 32 || 13 || e.charCode == 32 || 13){
         addClass(targets[i], collapsers[i], 'rotate');
       }}, false);
+    handlers[i].addEventListener('touch', function(){addClass(targets[i], collapsers[i], 'rotate')}, false);
   }
 }
 

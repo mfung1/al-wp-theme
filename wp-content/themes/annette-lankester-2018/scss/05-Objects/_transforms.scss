@@ -28,7 +28,7 @@
     margin: 0;
     transition: max-height .6s ease-out, margin .6s ease-out;
   }
-  @include breakpoint(tablet) {
+  @include breakpoint(856px) {
     &.nav_cnt {
       max-height: 1104px;
     }

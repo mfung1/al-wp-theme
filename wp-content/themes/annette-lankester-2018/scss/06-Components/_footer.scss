@@ -4,14 +4,14 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  @include breakpoint(tablet) {
+  @include breakpoint(856px) {
     padding: 2.2rem 1.5rem 1.5rem 2.6rem;
   }
   
   &-cnt {
     display: grid;
     grid-template-columns: 1fr;
-    @include breakpoint(tablet) {
+    @include breakpoint(856px) {
       grid-gap: px-to-rem(48px);
       grid-template-columns: 2fr 1.25fr 1fr 1fr 1fr;
       grid-template-areas: 'logo . col1 col2 col3';
@@ -26,12 +26,12 @@
     text-align: left;
     margin: 0;
     border-bottom: 1px solid $light-purple;
-    @include breakpoint(tablet) {
+    @include breakpoint(856px) {
       padding: 0;
       border-bottom: 0;
     }
   }
-  @include breakpoint(tablet) {
+  @include breakpoint(856px) {
     h3,h2 {
       margin-bottom: .6rem;
     }
@@ -46,7 +46,7 @@
   p {
     color: $white;
   }
-  @include breakpoint(tablet) {
+  @include breakpoint(856px) {
     .logo1 {grid-area: col1}
     .logo2 {grid-area: col2}
     .logo3 {grid-area: col3}
