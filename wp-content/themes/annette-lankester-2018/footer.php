@@ -30,8 +30,8 @@
             <h3 class="al-logo flex-sp-btwn">Useful links <span class="expand" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"><use xlink:href="#expand"/></svg></span></h3>
             <ul data-show="false" aria-expanded="false" data-links class="nav_cnt al-ftr-lnk-cnt">
               <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">Sitemap</span></a></li>
-              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">Counselling Directory</span></a></li>
-              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">Hypnotherapy Directory</span></a></li>
+              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt ws-nw">Counselling Directory</span></a></li>
+              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt ws-nw">Hypnotherapy Directory</span></a></li>
             </ul>
           </div>
           <div data-expander class="logo3">

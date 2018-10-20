@@ -21,7 +21,8 @@
     &:last-child {
       margin-right: 0;
     }
-    &:hover span {
+    &:hover span,
+    &:focus span {
       border-bottom: 2px solid $white;
       transition: border-bottom-color .6s ease;
     }
@@ -62,7 +63,8 @@
       text-align: left;
       margin: 0;
       border-bottom: 1px solid $light-purple;
-      &:hover span {
+      &:hover span,
+      &:focus span {
         border-bottom: 2px solid $black;
         transition: border-bottom-color .6s ease;
       }
