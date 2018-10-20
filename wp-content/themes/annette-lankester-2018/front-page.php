@@ -11,7 +11,8 @@
  
  get_header();
 ?>
-
-<h1>Front Page</h1>
+  <article class="mw-1200">
+    <h1>Front Page</h1>
+  </article>
 
 <?php get_footer();?>

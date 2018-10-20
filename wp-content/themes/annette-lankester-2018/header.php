@@ -21,6 +21,17 @@
 
 <body <?php body_class(); ?>>
   <main id="page" class="site">
+		<svg style="display: none">
+			<defs>
+				<symbol id="expand">
+					<path fill="none"
+						fill-rule="evenodd"
+						stroke="#4B507D"
+						stroke-width="1.2"
+						d="M18.652 1.312L10 10.276 1.356 1.312"/>
+				</symbol>
+      </defs>
+    </svg>
 	  <div class="al-wrpper">
 		  <a class="skip-lnk screen-reader-text" href="#content">Skip to main content</a>
 
@@ -30,7 +41,7 @@
 					<?php
 						wp_nav_menu( array(
 							'menu' => 'Navigation',
-							'menu_class' => 'nav_cnt ta-r',
+							'menu_class' => 'nav_cnt nav_cnt_dsk ta-r',
 							'container' => false,
 							'link_before' => '<span class="nav_txt">',
 							'link_after' => '</span>',

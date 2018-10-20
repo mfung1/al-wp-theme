@@ -21,6 +21,6 @@ p, span, a {
   @include ssp;
 }
 
-p, span:not(.display-name) {
+p {
   color: $black;
 }

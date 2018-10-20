@@ -32,7 +32,8 @@ Tags: Sass, HTML, ES6
 
 // 05-Objects
 
-@import './05-Objects/page-wrpper';
+@import './05-Objects/page-wrpper',
+        './05-Objects/flex-container';
 
 // 06-Components
 
@@ -40,7 +41,8 @@ Tags: Sass, HTML, ES6
         './06-Components/paras',
         './06-Components/skip-to-content',
         './06-Components/logo',
-        './06-Components/footer';
+        './06-Components/footer',
+        './06-Components/expand';
 
 // 07-Utils
 

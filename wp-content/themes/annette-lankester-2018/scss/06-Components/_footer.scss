@@ -4,14 +4,39 @@
   position: fixed;
   left: 0;
   bottom: 0;
+
+  .logo {
+    padding: 24px 0 24px 24px;
+    border-bottom: 1px solid $light-purple;
+  }
+
+  &-lnk-cnt {
+    max-height: 0;
+    overflow: hidden;
+  }
   
   &-cnt {
-    
-    padding: 2.2rem 1.5rem 1.5rem 2.6rem;
     display: grid;
-    grid-template-columns: 2fr 1.25fr 1fr 1fr 1fr;
-    grid-gap: px-to-rem(48px);
-    grid-template-areas: 'logo . col1 col2 col3';
+    grid-template-columns: 1fr;
+    @include breakpoint(tablet) {
+      grid-gap: px-to-rem(48px);
+      padding: 2.2rem 1.5rem 1.5rem 2.6rem;
+      grid-template-columns: 2fr 1.25fr 1fr 1fr 1fr;
+      grid-template-areas: 'logo . col1 col2 col3';
+    }
+  }
+  .logo1,
+  .logo2,
+  .logo3, {
+    display: block;
+    padding: 24px;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid $light-purple;
+    &:hover span {
+      border-bottom: 2px solid $black;
+      transition: border-bottom-color .6s ease;
+    }
   }
   h3,h2 {
     margin-bottom: .6rem;
@@ -23,8 +48,10 @@
   p {
     color: $white;
   }
-  .logo1 {grid-area: col1}
-  .logo2 {grid-area: col2}
-  .logo3 {grid-area: col3}
+  @include breakpoint(tablet) {
+    .logo1 {grid-area: col1}
+    .logo2 {grid-area: col2}
+    .logo3 {grid-area: col3}
+  }
 
 }

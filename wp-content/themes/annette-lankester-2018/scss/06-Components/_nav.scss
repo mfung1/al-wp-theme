@@ -13,18 +13,9 @@
   &_cnt {
     flex: 1 1 50%;
     list-style-type: none;
-    display: none;
-    @include breakpoint(desktop) {
-      display: inline-block;
-    }
   }
 
   &_lnk {
-    display: none;
-    @include breakpoint(desktop) {
-      display: inline-block;
-    }
-    
     margin-right: 1.5rem;
     
     &:last-child {
@@ -40,6 +31,14 @@
       transition: border-bottom-color .6s ease;
       position: relative;
       color: $white;
+    }
+  }
+
+  &_lnk-dsk,
+  &_cnt-dsk {
+    display: none;
+    @include breakpoint(desktop) {
+      display: inline-block;
     }
   }
   

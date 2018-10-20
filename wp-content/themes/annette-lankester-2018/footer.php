@@ -18,12 +18,12 @@
             <p>Copyright @2018. All rights reserved.</p>
           </div>
           <div class="logo1">
-            <h3 class="al-logo">Pages</h3>
-            <ul class="nav_cnt">
-              <li><a class="col-wht al-t3" href="#">Fees</a></li>
-              <li><a class="col-wht al-t3" href="#">Testimonials</a></li>
-              <li><a class="col-wht al-t3" href="#">About</a></li>
-              <li><a class="col-wht al-t3" href="#">Contact</a></li>
+            <h3 class="al-logo flex-sp-btwn">Pages <span class="expand" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"><use xlink:href="#expand"/></svg></span></h3>
+            <ul class="nav_cnt al-ftr-lnk-cnt">
+              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">Fees</span></a></li>
+              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">Testimonials</span></a></li>
+              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">About</span></a></li>
+              <li><a class="nav_lnk al-t3" href="#"><span class="nav_txt">Contact</span></a></li>
             </ul>
           </div>
           <div class="logo2">

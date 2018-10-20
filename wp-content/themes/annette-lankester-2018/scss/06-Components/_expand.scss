@@ -1,0 +1,18 @@
+.expand {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  border-radius: 25px;
+  background-color: $white-2;
+  position: relative;
+
+   svg {
+    position: absolute;
+    padding: 4px;
+    height: 24px;
+    width: 24px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   }
+}
