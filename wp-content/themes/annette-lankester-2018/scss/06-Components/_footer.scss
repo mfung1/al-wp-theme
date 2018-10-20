@@ -1,9 +1,9 @@
 .#{$namespace}-ftr {
   min-height: 16.4rem;
   width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  // position: fixed;
+  // left: 0;
+  // bottom: 0;
   @include breakpoint(856px) {
     padding: 2.2rem 1.5rem 1.5rem 2.6rem;
   }
@@ -46,10 +46,11 @@
   p {
     color: $white;
   }
-  @include breakpoint(856px) {
-    .logo1 {grid-area: col1}
-    .logo2 {grid-area: col2}
-    .logo3 {grid-area: col3}
-  }
+  
+}
 
+@include breakpoint(856px) {
+  .logo1 {grid-area: col1}
+  .logo2 {grid-area: col2}
+  .logo3 {grid-area: col3}
 }

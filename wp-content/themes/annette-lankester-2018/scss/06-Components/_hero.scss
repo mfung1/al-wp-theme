@@ -1,0 +1,36 @@
+.#{$namespace}-hero {
+  display: flex;
+  flex-direction: column-reverse;
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    max-height: 360px;
+  }
+  &-cpy {
+    padding: px-to-rem(18px) px-to-rem(9px) px-to-rem(12px);
+    outline: 1px solid $grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include breakpoint(tablet) {
+      padding: px-to-rem(48px) px-to-rem(12px) px-to-rem(48px) px-to-rem(24px);
+    }
+  }
+  &-img {
+    background-image: url(../../img/evan-smogor-779968-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: px-to-rem(220px);
+    max-height: px-to-rem(220px);
+    @include breakpoint(tablet) {
+      min-height: px-to-rem(360px);
+      max-height: px-to-rem(360px);
+    }
+    width: 100%;
+  }
+  &-cpy,
+  &-img {
+    flex: 1 1 50%;
+    max-width: 100%;
+
+  }
+}

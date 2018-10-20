@@ -20,8 +20,9 @@ Tags: Sass, HTML, ES6
 
 // 03-Generic
 
-@import './03-Generic/fonts',
-        './03-Generic/reset';
+@import './03-Generic/reset',
+        './03-Generic/fonts';
+        
 
 
 // 04-Elements
@@ -43,7 +44,8 @@ Tags: Sass, HTML, ES6
         './06-Components/skip-to-content',
         './06-Components/logo',
         './06-Components/footer',
-        './06-Components/expand';
+        './06-Components/expand',
+        './06-Components/hero';
 
 // 07-Utils
 

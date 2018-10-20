@@ -17,6 +17,10 @@ h1,h2,h3,h4 {
   @include lora;
 }
 
+h1,h2,h3,h4,p{
+  max-width: px-to-rem(480px);
+}
+
 p, span, a {
   @include ssp;
 }

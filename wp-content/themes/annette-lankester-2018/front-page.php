@@ -11,8 +11,8 @@
  
  get_header();
 ?>
-  <article class="mw-1200">
-    <h1>Front Page</h1>
-  </article>
+  <section class="mw-1200 mb-36">
+    <?php get_template_part('components/billboard', 'front-page')?>
+  </section>
 
 <?php get_footer();?>

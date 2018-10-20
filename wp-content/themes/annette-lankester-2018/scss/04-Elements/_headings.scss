@@ -20,3 +20,12 @@ h3 {
 h1,h2,h3 {
   color: $black;
 }
+
+.#{$namespace}-o1 {
+  font-size: px-to-rem(28px);
+  line-height: (36px);
+  @include breakpoint(mobile) {
+    font-size: px-to-rem(48px);
+    line-height: px-to-rem(61px);
+  }
+}

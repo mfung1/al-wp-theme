@@ -4,4 +4,7 @@
   @include breakpoint(856px) {
     padding: 0 12px;
   }
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
 }
