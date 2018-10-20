@@ -1,0 +1,40 @@
+.rotate {
+  transform: rotate(180deg);
+  transform-origin: center;
+  transition: transform .6s ease-out;
+}
+
+// Toggle showing and hiding panel area
+[data-show="true"] {
+  transform: none;
+  margin-top: px-to-rem(12px);
+  max-height: px-to-rem(1104px);
+  transition: max-height .6s ease-out, margin .6s ease;
+  &.al-ftr-lnk-cnt li {
+    max-height: px-to-rem(1104px);
+    margin-bottom: .8rem;
+    transition: max-height .6s ease-out, margin .6s ease-out;
+  }
+}
+
+[data-show="false"] {
+  max-height: 0;
+  margin: 0;
+  padding: 0!important;
+  overflow: hidden;
+  transition: max-height .6s ease-out, margin .6s ease;
+  &.al-ftr-lnk-cnt li{
+    max-height: 0;
+    margin: 0;
+    transition: max-height .6s ease-out, margin .6s ease-out;
+  }
+  @include breakpoint(tablet) {
+    &.nav_cnt {
+      max-height: 1104px;
+    }
+    &.al-ftr-lnk-cnt li {
+      max-height: px-to-rem(1104px);
+      margin-bottom: .8rem;
+    }
+  }
+}

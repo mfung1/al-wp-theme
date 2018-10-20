@@ -5,6 +5,7 @@
   border-radius: 25px;
   background-color: $white-2;
   position: relative;
+  transition: transform .6s ease;
 
    svg {
     position: absolute;
