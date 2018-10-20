@@ -65,4 +65,4 @@
 				</div>
 		  </nav>
 
-		  <div id="content" class="al-wrpper mw-1200 mt-52">
+		  <div id="content" class="mt-52">

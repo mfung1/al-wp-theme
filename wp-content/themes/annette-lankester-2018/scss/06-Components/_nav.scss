@@ -51,6 +51,7 @@
 
   &_mob {
     position: fixed;
+    z-index: 1;
     left: -100%;
     height: 100%;
     transition: left .6s ease;

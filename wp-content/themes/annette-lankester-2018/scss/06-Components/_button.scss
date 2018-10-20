@@ -1,7 +1,6 @@
 .#{$namespace}-btn {
   display: inline-block;
   padding: px-to-rem(7px) px-to-rem(20px);
-  background-color: $purple;
   max-height: 40px;
   border-radius: 4px;
   transition: box-shadow .3s ease-in-out;
@@ -11,12 +10,31 @@
   }
   &:hover,
   &:focus {
-    box-shadow: 0 0 0 4px rgba($purple, .6);
     transition: box-shadow .3s ease-in-out;
 
     span {
       border-bottom: 1px solid $white;
       transition: border-bottom .3s ease-in-out;
+    }
+  }
+
+  &-prp {
+    background-color: $purple;
+    &:hover,
+    &:focus { 
+      box-shadow: 0 0 0 4px rgba($purple, .6);
+    }
+  }
+
+  // &-nvy {
+  //   background-color: $navy;
+  // }
+
+  &-prp-lt {
+    background-color: $med-purple;
+    &:hover,
+    &:focus { 
+      box-shadow: 0 0 0 4px rgba($med-purple, .4);
     }
   }
 
