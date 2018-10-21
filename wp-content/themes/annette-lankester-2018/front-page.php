@@ -11,7 +11,7 @@
  
  get_header();
 ?>
-  <section class="al-wrpper bg-white ">
+  <section class="bg-white mb-52">
     <?php get_template_part('components/hero', 'front-page')?>
   </section>
   <section class="mw-1200 mb-36">

@@ -4,6 +4,7 @@
   max-height: px-to-rem(40px);
   position: fixed;
   line-height: px-to-rem(20px);
+  z-index: 2;
   left: 0;
   top: -40px;
   transition: top .6s;

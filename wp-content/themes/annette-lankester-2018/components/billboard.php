@@ -9,7 +9,7 @@ $the_query = new WP_Query($args);
 $i = 0;
 ?>
 <?php if($the_query->have_posts()): while($the_query->have_posts()): $the_query->the_post();?>
-  <article class="al-hero <?php echo($i == 1 ? 'al-hero-rvrs' : 'al-hero-nrml') ?>">
+  <article class="al-hero <?php echo($i == 1 ? 'al-hero-nrml' : 'al-hero-rvrs') ?> <?php echo($i != 2 ? 'mb-52': '')?>">
   <?php
   $arr = array (
     "0 0 472 312",
@@ -22,21 +22,17 @@ $i = 0;
     $postmeta = get_post_meta($postid, 'Image path');
     $imgpath = get_stylesheet_directory_uri() . $postmeta[0];
     ?>
+    <div class="al-hero-cpy">
+      <h2 class="mb-9"><?php the_title() ?></h2>
+      <p class="al-t2"><?php echo get_the_content() ?></p>
+    </div>
     <div class="al-hero-svg">
       <svg viewbox="<?php echo $arr[$i];?>" preserve-aspect-ratio="xMidYMid meet">
         <use xlink:href="<?php echo $imgpath ?>"/>
       </svg>
     </div>
-    <div class="al-hero-cpy">
-      <h2 class="mb-9"><?php the_title() ?></h2>
-      <p class="al-t2"><?php echo get_the_content() ?></p>
-    </div>
 <?php else: ?>
-   <div class="al-hero-cpy">
-      <h2 class="mb-9"><?php the_title() ?></h2>
-      <p class="al-t2"><?php echo get_the_content() ?></p>
-    </div>
-    <?php
+<?php
     $postid = get_the_ID();
     $postmeta = get_post_meta($postid, 'Image path');
     $imgpath = get_stylesheet_directory_uri() . $postmeta[0];
@@ -45,6 +41,10 @@ $i = 0;
       <svg viewbox="<?php echo $arr[$i];?>" preserve-aspect-ratio="xMidYMid meet">
         <use xlink:href="<?php echo $imgpath ?>"/>
       </svg>
+    </div>
+   <div class="al-hero-cpy">
+      <h2 class="mb-9"><?php the_title() ?></h2>
+      <p class="al-t2"><?php echo get_the_content() ?></p>
     </div>
 <?php endif;?>
   </article>

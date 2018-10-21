@@ -1,11 +1,31 @@
 .#{$namespace}-hero {
   display: flex;
-  &-fw {
+  svg {
+    max-height: 312px;
+  }
+  &-xl {
     min-height: px-to-rem(560px);
     max-height: px-to-rem(560px);
     @include breakpoint(tablet) {
       min-height: px-to-rem(420px);
       max-height: px-to-rem(420px);
+    }
+    .#{$namespace}-hero-svg {
+      padding: 12px;
+      @include breakpoint(tablet) {
+        padding: 24px;
+      }
+    }
+  }
+  &-md {
+    min-height: px-to-rem(549px);
+    max-height: px-to-rem(549px);
+    @include breakpoint(tablet) {
+      min-height: px-to-rem(287.9px);
+      max-height: px-to-rem(287.9px);
+    }
+    svg {
+      max-height: 239px;
     }
   }
   &-nrml {
@@ -14,9 +34,9 @@
   &-rvrs {
     flex-direction: column;
   }
+
   @include breakpoint(tablet) {
     flex-direction: row;
-    max-height: 360px;
   }
   &-cpy {
     padding: px-to-rem(18px) px-to-rem(9px) px-to-rem(12px);
@@ -36,17 +56,15 @@
     width: 100%;
   }
   &-svg {
-    padding: 12px 36px;
+    padding: 12px 24px;
     @include breakpoint(tablet) {
       padding: 24px;
     }
     text-align: center;
     width: 100%;
-    align-self: center;
-    svg {
-      max-height: 312px;
-    }
+    align-self: center; 
   }
+  
   &-cpy,
   &-img,
   &-svg {
