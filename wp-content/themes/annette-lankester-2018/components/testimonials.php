@@ -31,5 +31,9 @@ $i = 0;
     endif;
     ?>
   </div>
-  <a href="#" class="al-btn al-btn-prp"><span class="al-t3 col-wht">View all testimonials</span></a>
+  <div class="ta-c">
+    <a href="#" class="al-btn al-btn-prp">
+      <span class="al-t3 col-wht">View all testimonials</span>
+    </a>
+  </div>
 </article>
