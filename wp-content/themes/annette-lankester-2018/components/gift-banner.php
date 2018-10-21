@@ -9,7 +9,7 @@ $imgpath = get_stylesheet_directory_uri() . '/img/gift.svg#gift';
   </div>
   <div class="al-hero-cpy">
     <h2 class="col-wht mb-9">A gift from me</h2>
-    <p class="al-t1 mb-12 col-wht">If you&rsquo;re not sure if psychotherapy or hynotherapy is right for you, try a free 30&#45;minute consultation on me. </p>
-    <a href="#" class="al-btn al-btn-prp-lt col-wht"><span class="al-t2">Let&rsquo;s chat</span></a>
+    <p class="al-t2 mb-12 col-wht">If you&rsquo;re not sure if psychotherapy or hynotherapy is right for you, try a free 30&#45;minute consultation on me. </p>
+    <a href="#" class="al-btn al-btn-prp-lt col-wht"><span class="al-t3">Let&rsquo;s chat</span></a>
   </div>
 </article>

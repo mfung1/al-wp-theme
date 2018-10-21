@@ -20,5 +20,8 @@
   <section class="bg-nvy mb-36">
     <?php get_template_part('components/gift-banner', 'front-page')?>  
   </section>
+  <section class="mb-52">
+    <?php get_template_part('components/testimonials', 'front-page')?>
+  </section>
 
 <?php get_footer();?>

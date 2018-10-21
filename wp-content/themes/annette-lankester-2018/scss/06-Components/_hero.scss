@@ -7,8 +7,8 @@
     min-height: px-to-rem(560px);
     max-height: px-to-rem(560px);
     @include breakpoint(tablet) {
-      min-height: px-to-rem(420px);
-      max-height: px-to-rem(420px);
+      min-height: px-to-rem(456px);
+      max-height: px-to-rem(456px);
     }
     .#{$namespace}-hero-svg {
       padding: 12px;

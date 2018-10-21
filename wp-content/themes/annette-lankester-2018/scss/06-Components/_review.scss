@@ -1,0 +1,23 @@
+.#{$namespace}-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.#{$namespace}-review{
+  border-radius: 4px;
+  position: relative;
+
+  &-src {
+   position: absolute;
+   right: 24px;
+   bottom: 24px;
+  }
+
+  &-purp {
+    background-color: $purple;
+  }
+  &-l-purp {
+    background-color: $light-purple;
+  }
+}
