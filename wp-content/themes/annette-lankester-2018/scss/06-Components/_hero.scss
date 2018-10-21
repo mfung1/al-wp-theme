@@ -5,8 +5,6 @@
     max-height: 312px;
   }
   &-xl {
-    min-height: px-to-rem(560px);
-    max-height: px-to-rem(560px);
     @include breakpoint(mobile) {
       min-height: px-to-rem(456px);
       max-height: px-to-rem(456px);
@@ -19,8 +17,6 @@
     }
   }
   &-md {
-    min-height: px-to-rem(549px);
-    max-height: px-to-rem(549px);
     @include breakpoint(mobile) {
       min-height: px-to-rem(287.9px);
       max-height: px-to-rem(287.9px);
