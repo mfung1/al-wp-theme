@@ -1,10 +1,15 @@
 .#{$namespace}-hero {
   display: flex;
+  &-fw {
+    min-height: px-to-rem(560px);
+    max-height: px-to-rem(560px);
+    @include breakpoint(tablet) {
+      min-height: px-to-rem(420px);
+      max-height: px-to-rem(420px);
+    }
+  }
   &-nrml {
     flex-direction: column-reverse;
-    .#{$namespace}-hero-cpy {
-      box-shadow: inset 0 0 0 2px $grey; // Inset lines rather than external border/outline
-    }
   }
   &-rvrs {
     flex-direction: column;
@@ -28,17 +33,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: px-to-rem(220px);
-    max-height: px-to-rem(220px);
-    @include breakpoint(tablet) {
-      min-height: px-to-rem(360px);
-      max-height: px-to-rem(360px);
-    }
     width: 100%;
   }
   &-svg {
-    padding: 24px;
+    padding: 12px 36px;
+    @include breakpoint(tablet) {
+      padding: 24px;
+    }
     text-align: center;
+    width: 100%;
+    align-self: center;
     svg {
       max-height: 312px;
     }

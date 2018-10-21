@@ -34,7 +34,7 @@
     </svg>
 		  <a class="skip-lnk screen-reader-text" href="#content">Skip to main content</a>
 
-		  <nav class="bg-purp">
+		  <nav class="bg-purp al-wrpper">
 				<div class="nav mw-1200">
 					<h1 class="al-logo">Annette Lankester</h1>
 					<?php
@@ -65,4 +65,4 @@
 				</div>
 		  </nav>
 
-		  <div id="content" class="mt-52">
+		  <div id="content">

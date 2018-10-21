@@ -9,7 +9,7 @@ $the_query = new WP_Query($args);
 $i = 0;
 ?>
 <?php if($the_query->have_posts()): while($the_query->have_posts()): $the_query->the_post();?>
-  <article class="al-hero <?php echo($i == 1 ? 'al-hero-rvrs' : '') ?>">
+  <article class="al-hero <?php echo($i == 1 ? 'al-hero-rvrs' : 'al-hero-nrml') ?>">
   <?php
   $arr = array (
     "0 0 472 312",

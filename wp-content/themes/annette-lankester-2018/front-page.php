@@ -11,14 +11,14 @@
  
  get_header();
 ?>
-  <section class="al-wrpper mw-1200 mb-36">
+  <section class="al-wrpper bg-white ">
     <?php get_template_part('components/hero', 'front-page')?>
-  </section>
-  <section class="bg-nvy mb-36 mw-1200">
-    <?php get_template_part('components/gift-banner', 'front-page')?>  
   </section>
   <section class="mw-1200 mb-36">
     <?php get_template_part('components/billboard', 'front-page')?>
+  </section>
+  <section class="bg-nvy mb-36">
+    <?php get_template_part('components/gift-banner', 'front-page')?>  
   </section>
 
 <?php get_footer();?>
