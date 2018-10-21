@@ -48,4 +48,4 @@ $i = 0;
     </div>
 <?php endif;?>
   </article>
-  <?php $i++; endwhile; endif; ?>
+  <?php $i++; endwhile; endif; wp_reset_query();?>

@@ -1,12 +1,37 @@
 .#{$namespace}-reviews {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @include breakpoint(tablet) {
+   flex-direction: row;
+  }
 }
 
-.#{$namespace}-review{
+.#{$namespace}-review {
   border-radius: 4px;
   position: relative;
+  flex: 1 1 100%;
+  padding: 24px;
+
+  @include breakpoint(tablet) {
+    max-width: 100%;
+    flex: 0 1 calc(33.33% - 24px);
+    margin-right: 24px;
+    &:nth-child(3n) {margin-right: 0;}
+  }
+
+  svg {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
+  &-cpy {
+    margin: 24px 0 24px 24px;
+  }
 
   &-src {
    position: absolute;
