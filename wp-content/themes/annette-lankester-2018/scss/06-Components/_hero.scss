@@ -1,18 +1,19 @@
 .#{$namespace}-hero {
   display: flex;
+  align-items: center;
   svg {
     max-height: 312px;
   }
   &-xl {
     min-height: px-to-rem(560px);
     max-height: px-to-rem(560px);
-    @include breakpoint(tablet) {
+    @include breakpoint(mobile) {
       min-height: px-to-rem(456px);
       max-height: px-to-rem(456px);
     }
     .#{$namespace}-hero-svg {
       padding: 12px;
-      @include breakpoint(tablet) {
+      @include breakpoint(desktop) {
         padding: 24px;
       }
     }
@@ -20,7 +21,7 @@
   &-md {
     min-height: px-to-rem(549px);
     max-height: px-to-rem(549px);
-    @include breakpoint(tablet) {
+    @include breakpoint(mobile) {
       min-height: px-to-rem(287.9px);
       max-height: px-to-rem(287.9px);
     }
@@ -35,7 +36,7 @@
     flex-direction: column;
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(mobile) {
     flex-direction: row;
   }
   &-cpy {

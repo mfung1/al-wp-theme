@@ -19,7 +19,7 @@ $i = 0;
         $theQuery->the_post();
     ?>
     <div class="al-review <?php echo ($i == 1 ? 'al-review-l-purp' : 'al-review-purp')?> mb-36">
-      <p class="al-t2 <?php echo ($i == 1 ? 'col-prp' : 'col-wht') ?> al-review-cpy"><?php echo get_the_content()?></p>
+      <p data-matchheights="review" class="al-t2 <?php echo ($i == 1 ? 'col-prp' : 'col-wht') ?> al-review-cpy"><?php echo get_the_content()?></p>
       <p class="al-t3 al-review-src <?php echo ($i == 1 ? 'col-prp' : 'col-wht') ?>">- Anon</p>
      <svg width="21" height="19" viewbox="0 0 21 19" preserve-aspect-ratio="xMidYMid meet">
        <use xlink:href="<?php echo $imgPath?>"/>

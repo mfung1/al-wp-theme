@@ -14,7 +14,7 @@
   <section class="bg-white mb-52">
     <?php get_template_part('components/hero', 'front-page')?>
   </section>
-  <section class="mw-1200 mb-36">
+  <section class="mw-960 mb-36">
     <?php get_template_part('components/billboard', 'front-page')?>
   </section>
   <section class="bg-nvy mb-36">
