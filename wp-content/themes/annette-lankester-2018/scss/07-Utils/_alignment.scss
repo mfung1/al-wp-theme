@@ -12,12 +12,18 @@
 }
 
 .mw-1200 {
-  max-width: 75rem;
-  width: 100%;
-  margin: 0 auto;
+  max-width: px-to-rem(1200px);
 }
 .mw-960 {
-  max-width: 60rem;
+  max-width: px-to-rem(960px);
+}
+.mw-790 {
+  max-width: px-to-rem(790px);
+}
+.mw-304 {
+  max-width: px-to-rem(304px);
+}
+[class^="mw"] {
   width: 100%;
   margin: 0 auto;
 }
@@ -27,10 +33,16 @@
 .mb-12 {
   margin-bottom: px-to-rem(12px);
 }
+.mb-19 {
+  margin-bottom: px-to-rem(19px);
+}
 
 .mb-36 {
   margin-bottom: px-to-rem(36px);
 }
 .mb-52 {
   margin-bottom: px-to-rem(52px)!important;
+}
+.mt-52 {
+  margin-top: px-to-rem(52px)!important;
 }

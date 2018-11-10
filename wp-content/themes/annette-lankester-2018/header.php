@@ -35,8 +35,8 @@
 		  <a class="skip-lnk screen-reader-text" href="#content">Skip to main content</a>
 
 		  <nav class="bg-purp al-wrpper">
-				<div class="nav mw-1200">
-					<h1 class="al-logo">Annette Lankester</h1>
+				<div class="mw-1200 nav">
+				<a class="al-logo" href="<?php echo esc_url( home_url('/') );?>"><h1 class="col-wht">Annette Lankester</h1></a>
 					<?php
 						wp_nav_menu( array(
 							'menu' => 'Navigation',
