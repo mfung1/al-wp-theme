@@ -17,6 +17,9 @@
 .mw-960 {
   max-width: px-to-rem(960px);
 }
+.mw-480 {
+  max-width: px-to-rem(480px);
+}
 .mw-790 {
   max-width: px-to-rem(790px);
 }
@@ -45,4 +48,8 @@
 }
 .mt-52 {
   margin-top: px-to-rem(52px)!important;
+}
+.p-08 {
+  padding-left: px-to-rem(8px);
+  padding-right: px-to-rem(8px);
 }
