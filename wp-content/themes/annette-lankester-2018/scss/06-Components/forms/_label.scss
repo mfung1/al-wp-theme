@@ -1,0 +1,6 @@
+.#{$namespace}-lbl {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(20px);
+  @include ssp;
+  color: $black;
+}
