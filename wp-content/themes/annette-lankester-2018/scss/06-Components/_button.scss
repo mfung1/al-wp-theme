@@ -38,4 +38,12 @@
     }
   }
 
+  &-wht {
+    background-color: $white-2;
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 4px rbga($white, .6);
+    }
+  }
+
 }

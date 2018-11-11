@@ -10,6 +10,11 @@
 .ws-nw {
   white-space: nowrap;
 }
+.pos-top-right {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
 
 .mw-1200 {
   max-width: px-to-rem(1200px);
