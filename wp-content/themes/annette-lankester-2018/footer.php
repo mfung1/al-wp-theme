@@ -12,7 +12,7 @@
 ?>
       </div>
       <footer class="al-ftr bg-black">
-        <div class="al-ftr-cnt mw-1200">
+        <div class="mw-1200 al-ftr-cnt">
           <div class="logo">
             <h2 class="al-logo">Annette Lankester</h2>
             <p>Copyright @2018. All rights reserved.</p>

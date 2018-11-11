@@ -17,6 +17,9 @@
 .mw-960 {
   max-width: px-to-rem(960px);
 }
+.mw-540 {
+  max-width: px-to-rem(540px);
+}
 .mw-480 {
   max-width: px-to-rem(480px);
 }
@@ -25,6 +28,9 @@
 }
 .mw-304 {
   max-width: px-to-rem(304px);
+}
+.mw-113 {
+  max-width: px-to-rem(113px);
 }
 [class^="mw"] {
   width: 100%;
