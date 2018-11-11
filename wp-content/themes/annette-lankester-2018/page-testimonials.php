@@ -51,7 +51,9 @@ $i = 0;
   ?>
 </section>
 
-
+<section class="bg-purp-lt">
+  <?php get_template_part('components/lets-talk', 'testimonials') ?>
+</section>
 <?php
 get_footer();
 ?>

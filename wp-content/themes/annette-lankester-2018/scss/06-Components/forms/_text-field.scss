@@ -1,0 +1,7 @@
+.#{$namespace}-field {
+  border-radius: 5px;
+  border: 1px solid $purple;
+  background-color: $light-purple;
+  color: $purple;
+  padding: px-to-rem(10px) px-to-rem(12px);
+}
